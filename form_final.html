@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/email.png"/>
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+    <!-- Action removed for security purposes -->
+ <form>
+  <fieldset>
+    <legend>Sample Form</legend>
+
+    <label for="name_id">Your Name</label>
+    <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+
+    <label for="email_id">Your Email</label>
+    <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+
+    <label for="phone_id">Your Phone Number</label>
+    <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <div><span>Format: 123-456-7890</span></div>
+
+
+    <label for="msg">Leave A Message</label>
+    <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+    <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+    <label for ="cBox">Remember me</label>
+
+    <input type="submit" value = "Contact Me">
+  </fieldset>
+ </form>
+</body>
+</html>
